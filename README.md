@@ -1,6 +1,6 @@
 # Laravel-CRUD
 
-Laravel-CRUD with email notification and authentication is a web development project that includes creating, reading, updating, and deleting data, sending email notifications, and implementing user authentication for secure access control.
+Laravel-CRUD with email notification and authentication is a web development project that includes creating, reading, updating, and deleting data.
 
 ## Getting Started
 
