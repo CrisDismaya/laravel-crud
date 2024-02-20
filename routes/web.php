@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UserController as UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/crud', [UserController::class, 'index'])->name('index');
+
+// public access
 Route::get('/', function () {
-    return view('welcome');
-});
+    return redirect()->route('index');
+})->name('home');
