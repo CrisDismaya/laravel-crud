@@ -19,6 +19,10 @@ use App\Http\Controllers\UserController as UserController;
 // });
 
 Route::get('/crud', [UserController::class, 'index'])->name('index');
+Route::get('/crud/show', [UserController::class, 'show'])->name('show');
+Route::post('/crud/create', [UserController::class, 'create'])->name('create');
+Route::patch('/crud/{id}', [UserController::class, 'update'])->name('update');
+Route::delete('/crud/{id}', [UserController::class, 'delete'])->name('delete');
 
 // public access
 Route::get('/', function () {
