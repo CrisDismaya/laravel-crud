@@ -25,7 +25,11 @@ These instructions will help you set up and run the project locally on your mach
    ```sh
    composer install
    ```
-3. Compile and Hot-Reload for Development
+3. Run the migration
+    ```sh
+    php artisan migrate:fresh --seed
+    ```
+4. Compile and Hot-Reload for Development
     ```sh
     php artisan serve
     ```
